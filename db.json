@@ -1,0 +1,40 @@
+{
+  "cafeteria": [
+    {
+      "nombreProducto": "café con leche",
+      "precioProducto": "100",
+      "categoria": "bebida-caliente",
+      "id": 1
+    },
+    {
+      "nombreProducto": "Media luna",
+      "precioProducto": "15",
+      "categoria": "dulce",
+      "id": 2
+    },
+    {
+      "nombreProducto": "Tostado mixto",
+      "precioProducto": "150",
+      "categoria": "sandwitch",
+      "id": 3
+    },
+    {
+      "nombreProducto": "Tortilla x unidad",
+      "precioProducto": "50",
+      "categoria": "salado",
+      "id": 4
+    },
+    {
+      "nombreProducto": "factura x unidad",
+      "precioProducto": "20",
+      "categoria": "dulce",
+      "id": 5
+    },
+    {
+      "nombreProducto": "cafesito",
+      "precioProducto": "40",
+      "categoria": "bebida-caliente",
+      "id": 8
+    }
+  ]
+}
