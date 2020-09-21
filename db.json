@@ -2,13 +2,13 @@
   "cafeteria": [
     {
       "nombreProducto": "café con leche",
-      "precioProducto": "100",
+      "precioProducto": "130",
       "categoria": "bebida-caliente",
       "id": 1
     },
     {
       "nombreProducto": "Media luna",
-      "precioProducto": "15",
+      "precioProducto": "70",
       "categoria": "dulce",
       "id": 2
     },
@@ -35,6 +35,12 @@
       "precioProducto": "40",
       "categoria": "bebida-caliente",
       "id": 8
+    },
+    {
+      "nombreProducto": "Chocolate milkouse",
+      "precioProducto": "100",
+      "categoria": "dulce",
+      "id": 9
     }
   ]
 }

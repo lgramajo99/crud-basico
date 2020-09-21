@@ -13,6 +13,7 @@ import EditarProductos from './components/Productos/EditarProducto';
 import Header from './components/common/Header';
 import Footer from './components/common/Footer'
 import Swal from "sweetalert2";
+import PaginaError from './components/Error404/PaginaError';
 
 function App() {
   const [productos, setProductos] = useState([]);
@@ -60,8 +61,20 @@ function App() {
         <Route exact path="/productos/nuevo">
           <AgregarProducto setRecargarProductos={setRecargarProductos}></AgregarProducto>
         </Route>
-        <Route exact path="/productos/editar">
-          <EditarProductos></EditarProductos>
+        <Route exact path="/productos/editar/:id" render={(props)=>{
+          // codigo a ejecutar antes de renderizar el componente
+          // obtener el id de la ruta
+          const idProducto = parseInt(props.match.params.id)
+          console.log(idProducto);
+
+          // buscar el producto que coincida con el id
+          const productoSelecionado = productos.find(producto => producto.id === idProducto )
+          // mostrar el componente editarProducto
+          return <EditarProductos producto={productoSelecionado} setRecargarProductos={setRecargarProductos}></EditarProductos>
+        }}>
+        </Route>
+        <Route exact path="*" >
+        <PaginaError></PaginaError>
         </Route>
       </Switch>
       <Footer></Footer>

@@ -83,7 +83,6 @@ const AgregarProducto = (props) => {
             Es necesario llenar todos los productos
           </Alert>
         ) : null}
-
         <Form.Group>
           <Form.Label>Nombre de producto *</Form.Label>
           <Form.Control
